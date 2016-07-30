@@ -8,6 +8,18 @@ function Complex(real, imag){
     this.imag = imag;
 }
 
+
+function Point(x,y){
+    this.x = x;
+    this.y = y;
+}
+    
+    
+function CircleInfo(point,radius){
+    this.center = point;
+    this.radius = radius;
+}
+
 /* 
  * version : 0.2
  *  紀錄所有「純運算」的函式  
@@ -59,6 +71,7 @@ var MathJs = {
             return this.countLog(10,param);             
          }
     },
+    
     Vector : {
         init : function(length, angle){
             return new Vector(length, angle);
