@@ -1,0 +1,19 @@
+<head>
+    <script type="text/javascript" src="../js/math/MathJs.js"></script>
+    <script>
+        var C1 = MathJs.Vector.init(0.528, -113.536);
+        var B1 = 1.107
+        
+        var absC = MathJs.Vector.abs(C1);
+        
+        var back = Math.sqrt( Math.pow(B1,2) - 4 * Math.pow(absC,2));
+        var topNum_Pos1 = B1 + back;
+        var topNum_Pos2 = B1 - back;
+        
+        var bottomNum = MathJs.Vector.vectorCrossScalar(C1,2);
+    
+        var resultPos1 = MathJs.Vector.scalarDividedByVector(topNum_Pos1, bottomNum);
+        var resultPos2 = MathJs.Vector.scalarDividedByVector(topNum_Pos2, bottomNum);
+        
+    </script>
+</head>
